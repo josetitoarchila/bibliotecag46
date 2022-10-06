@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Titulo bootstrap</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous" />
+    <link href="css/estilo_bootstrap.css" rel="stylesheet" />
+   
+
+
+
+
+</head>
+<body>
+    <header class="container-lg">
+        <div class="row">
+                <div class="caja1 col-12 col-sm-6 col-md-6 col-xl-6">
+                    <a href="https://es.wikipedia.org/wiki/Gabriel_Garc%C3%ADa_M%C3%A1rquez">
+                        <img class="img-fluid" alt="LOGO DE LA BIBLIOTECA" src="img/imagen.jpg" />
+                    </a>
+                </div>
+                <div class="caja2 col-12 col-sm-6 col-md-6 col-xl-6">
+                    <h1>Biblioteca G46</h1>
+                </div>
+                <div class="caja3 col-12 col-sm-12 col-md-12 col-xl-12">
+                    <nav class="navbar navbar-dark bg-primary">
+                        <ul>
+                            <li><a href="https://es-la.facebook.com/CCGGM/" target="_blank">
+                                Libros</a></li>
+                            
+                            <li><a href="https://www.cervantes.es/bibliotecas_documentacion_espanol/biografias/biblioteca_autor.htm" target="_blank">
+                                Autores</a></li>
+                            <li><a href="#">Socios</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            
+        </div>
+    </header>
+    <br /><br />
+    
+    <div class="container-lg">
+        <div class="row">
+            <div class="formulario1 col-12 col-md-3">
+
+            </div>
+            <div class="formulario2 col-12 col-md-6">
+                <form>
+                    <h1 style="text-align:center">Formulario</h1>
+                    <label class="form-label" for="numero1">Numero 1</label>
+                    <input class="form-control" type="number" id="numero1" placeholder="aqui va el numero 1"  required="true" size="50px"  />
+                    <br /><br />
+                    <label class="form-label" for="publicacion">Numero 2</label>
+                    <input class="form-control" type="number" id="numero2" placeholder="aqui va el numero 2"  required="true" size="50px"  />
+    
+                    <br /><br />
+                    <input class="btn btn-primary" type="submit" id="cancelar" value="Cancelar" />
+                    <input class="btn btn-primary" type="submit" id="guardar" value="Sumar" onclick="Sumar()" />
+                    
+                </form>    
+
+                
+
+                <p name="parrafo1">parrafo1</p>
+                <p>parrafo2</p>
+                <p>parrafo3</p>
+
+            </div>
+
+            
+            <div class="formulario3 col-12 col-md-3">
+
+            </div>
+
+        </div>
+
+    </div>
+    <h3></h3>
+    <br /><br />
+
+    
+
+    <table class="table" align="center" >
+        <!--fila con titulos (negrilla)-->
+        <tr>
+            <th></th>
+            <th>LUNES</th>
+            <th>MARTES</th>
+            <th>MIERCOLES</th>
+            <th>JUEVES</th>
+            <th>VIERNES</th>
+        <tr>
+        <tr>
+            <!--fila sin negrilla -->
+            <td>6-8 pm</td>
+            <td>QUIMICA</td>
+            <td>MATEMATICAS</td>
+            <td>QUIMICA</td>
+            <td>IDIOMAS</td>
+            <td>FISICA</td>
+
+
+        </tr>
+</table>
+
+<h1 style="text-align:center">Ejercicios java script</h1>
+<script src="js/javascriptsumar.js"></script>
+
+
+</body>
+</html>

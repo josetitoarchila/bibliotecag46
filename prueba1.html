@@ -4,9 +4,190 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Biblioteca G46</title>
+    <link rel="stylesheet" href="css/css2.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    
 </head>
 <body>
-    <h1>biblioteca g46 cambios version</h1>
+    <div class="caja-principal">
+        <div class="caja-logo">
+            <a href="https://es.wikipedia.org/wiki/Gabriel_Garc%C3%ADa_M%C3%A1rquez">
+                <img alt="LOGO DE LA BIBLIOTECA" src="img/imagen.jpg" />
+            </a>
+        </div>
+        <div class="caja-titulo">
+            <h1>Biblioteca</h1>
+        </div>
+        <div class="caja-menu">
+            <center>
+                <nav>
+                    <ul>
+                        <li><a href="https://es-la.facebook.com/CCGGM/" target="_blank">
+                            Libros</a></li>
+                        
+                        <li><a href="https://www.cervantes.es/bibliotecas_documentacion_espanol/biografias/biblioteca_autor.htm" target="_blank">
+                            Autores</a></li>
+                        <li><a href="#">Socios</a></li>
+                    </ul>
+                </nav>
+            </center>
+
+        </div>
+    </div>
+    <br /><br />
+
+
+
+    <main>
+            <form>
+                <h1 style="text-align:center">Formulario</h1>
+                <label class="label-form" for="nombre_libro">Nombre Libro</label>
+                <input class="input-form" type="text" id="nombre_libro" placeholder="aqui va el nombre del libro"  required="true"  maxlength="40" />
+                <br /><br />
+                <label class="label-form" for="publicacion">Año de publicacion</label>
+                <input class="input-form" type="number" id="publicacion" placeholder="aqui va el año de publicacion"  required="true"  maxlength="4" min="1900" max="2022" />
+                <br /><br />    
+                <label class="label-form" for="fecha_nacimiento">Fecha de nacimiento</label>
+                <input class="input-form" type="datetime-local" id="fecha_nacimiento" placeholder="aqui va la fecha de nacimiento"  required="true"  />
+                <br /><br />    
+                <label class="label-form" for="email_autor">Email autor</label> 
+                <input class="input-form" type="email" id="email_autor"  placeholder="aqui va el email autor"  required="false"  />
+                <br /><br />    
+                <label class="label-form" for="clave">Clave</label> 
+                <input class="input-form" type="password" id="clave" placeholder="aqui va clave"  required="false"  />
+                <br /><br />
+                <label class="label-form" for="tipo_documento">Tipo de documento</label> 
+                <select class="input-form" id="tipo_documento" name="tipo_documento">
+                    <option value="CC" selected>Cedula de Ciudadania</option>
+                    <option value="TI">Tarjeta de identidad</option>
+                    <option value="CE">Cedula de Extranjeria</option>
+
+                </select>
+                <br /><br />
+                <label class="label-form" for="observaciones">Observaciones</label> 
+                <textarea class="input-form" id="observaciones" autocomplete="on" cols="50" maxlength="5" rows="4">Ingresar Observaciones</textarea>
+                <br /><br />
+                <!--Crear un radio button para seleccionar genero-->
+                <label class="label-form">Genero:</label>
+                <label>Femenino</label>
+                <input type="radio" name="genero" value="Femenino"> 
+                <label>Masculino</label>
+                <input type="radio" name="genero" value="Masculino"> 
+                <br /><br />
+                <label class="label-form">Materias:</label>
+                <label>Quimica:</label>
+                <input type="checkbox" name="materias" value="Quimica">
+                <label>Fisica:</label>
+                <input type="checkbox" name="materias" value="Fisica">
+                <label>Matematicas:</label>
+                <input type="checkbox" name="materias" value="Matematicas">
+
+
+                <br /><br />
+                <input class="boton-form" type="submit" id="cancelar" value="Cancelar" />
+                <input class="boton-form" type="submit" id="guardar" value="Guardar" />
+                
+            </form>
+            <br /><br />
+            <table class="estilo-tabla" width="50%" align="center" >
+                    <!--fila con titulos (negrilla)-->
+                    <tr>
+                        <th></th>
+                        <th>LUNES</th>
+                        <th>MARTES</th>
+                        <th>MIERCOLES</th>
+                        <th>JUEVES</th>
+                        <th>VIERNES</th>
+                    <tr>
+                    <tr>
+                        <!--fila sin negrilla -->
+                        <td>6-8 pm</td>
+                        <td>QUIMICA</td>
+                        <td>MATEMATICAS</td>
+                        <td>QUIMICA</td>
+                        <td>IDIOMAS</td>
+                        <td>FISICA</td>
+
+
+                    </tr>
+            </table>
+
+        </center>
+    </main>
+    <br /><br />
+    <!-- aqui va la caja del -->
+
+        <div class="caja_grande">
+            <div class="caja_1">
+                <div class="caja_superior">
+                    <div class="caja_superior1"><h3>Titulo caja 1</h3></div>
+                    <div class="caja_superior2">
+                        <span class="material-symbols-outlined">
+                            shopping_cart_checkout
+                        </span>
+
+                    </div>
+
+                </div>
+                <div class="caja_media">
+                    <div class="caja_media1">
+                        <p>Ejemplo1</p>
+                        <p>Ejemplo2</p>
+                        <p>Ejemplo3</p>
+                    </div>
+                    <div class="caja_media2">
+                        <p>Ejemplo4</p>
+                        <p>Ejemplo5</p>
+                        <p>Ejemplo6</p>
+
+
+                    </div>
+                </div>
+                <div class="caja_inferior">
+
+                    <span class="material-symbols-outlined">
+                        shopping_cart_checkout
+                    </span>
+                    <button id="boton1"class="boton1">boton1</button>
+
+                </div>
+
+            </div>
+            <div class="caja_2">
+
+
+            </div>
+            <div class="caja_3">
+
+
+            </div>
+        </div>
+
+    <br /><br />
+    <footer>
+        <div class="enlaces">
+            <h4>ENLACES</h4>
+            <p>Nosotros</p>
+            <p>Contacto</p>
+            <p>Mapa del sitio</p>
+            <p>Blog</p>
+        </div>
+        <div class="redes_sociales">
+            <h4>REDES DE SOCIALES</h4>
+        </div>
+        <div class="proyecto">
+            <h4>PROYECTO</h4>
+            <p>El proyecto es para una biblioteca.......</p>
+
+
+        </div>
+        
+
+    </footer>
+    <br /><br /><br /><br />
 </body>
 </html>

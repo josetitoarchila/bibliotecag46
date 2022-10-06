@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Titulo bootstrap</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous" />
+    <link href="css/estilo_bootstrap.css" rel="stylesheet" />
+   
+    
+
+
+
+</head>
+<body>
+    <header class="container-lg">
+        <div class="row">
+                <div class="caja1 col-12 col-sm-6 col-md-6 col-xl-6">
+                    <a href="https://es.wikipedia.org/wiki/Gabriel_Garc%C3%ADa_M%C3%A1rquez">
+                        <img class="img-fluid" alt="LOGO DE LA BIBLIOTECA" src="img/imagen.jpg" />
+                    </a>
+                </div>
+                <div class="caja2 col-12 col-sm-6 col-md-6 col-xl-6">
+                    <h1>Biblioteca G46</h1>
+                </div>
+                <div class="caja3 col-12 col-sm-12 col-md-12 col-xl-12">
+                    <nav class="navbar navbar-dark bg-primary">
+                        <ul>
+                            <li><a href="https://es-la.facebook.com/CCGGM/" target="_blank">
+                                Libros</a></li>
+                            
+                            <li><a href="https://www.cervantes.es/bibliotecas_documentacion_espanol/biografias/biblioteca_autor.htm" target="_blank">
+                                Autores</a></li>
+                            <li><a href="#">Socios</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            
+        </div>
+    </header>
+    <br /><br />
+    <main id="main1" class="container-lg" nombre="1124547">
+        <div class="row">
+            <div class="formulario1 col-12 col-md-3">
+
+            </div>
+            <div class="formulario2 col-12 col-md-6">
+                <form>
+                    <h1 style="text-align:center">Formulario</h1>
+                    <label class="form-label" for="nombre_libro">Nombre Libro</label>
+                    <input class="form-control" type="text" id="nombre_libro" placeholder="aqui va el nombre del libro"  required="true" size="50px" maxlength="40" />
+                    <br /><br />
+                    <label class="form-label" for="publicacion">Año de publicacion</label>
+                    <input class="form-control" type="number" id="publicacion" placeholder="aqui va el año de publicacion"  required="true" size="50px" maxlength="4" min="1900" max="2022" />
+                    <br /><br />    
+                    <label class="form-label" for="fecha_nacimiento">Fecha de nacimiento</label>
+                    <input class="form-control" type="datetime-local" id="fecha_nacimiento" placeholder="aqui va la fecha de nacimiento"  required="true" size="50px" />
+                    <br /><br />    
+                    <label class="form-label" for="email_autor">Email autor</label> 
+                    <input class="form-control" type="email" id="email_autor"  placeholder="aqui va el email autor"  required="false" size="50px" />
+                    <br /><br />    
+                    <label class="form-label" for="clave">Clave</label> 
+                    <input class="form-control" type="password" id="clave" placeholder="aqui va clave"  required="false" size="50px" />
+                    <br /><br />
+                    <label class="form-label" for="tipo_documento">Tipo de documento</label> 
+                    <select class="form-control" id="tipo_documento" name="tipo_documento">
+                        <option value="CC" selected>Cedula de Ciudadania</option>
+                        <option value="TI">Tarjeta de identidad</option>
+                        <option value="CE">Cedula de Extranjeria</option>
+    
+                    </select>
+                    <br /><br />
+                    <label class="form-label" for="observaciones">Observaciones</label> 
+                    <textarea class="form-control" id="observaciones" autocomplete="on" cols="50" maxlength="5" rows="4">Ingresar Observaciones</textarea>
+                    <br /><br />
+                    <!--Crear un radio button para seleccionar genero-->
+                    <label class="label-form">Genero:</label>
+                    <label>Femenino</label>
+                    <input type="radio" name="genero" value="Femenino"> 
+                    <label>Masculino</label>
+                    <input type="radio" name="genero" value="Masculino"> 
+                    <br /><br />
+                    <label class="label-form">Materias:</label>
+                    <label>Quimica:</label>
+                    <input type="checkbox" name="materias" value="Quimica">
+                    <label>Fisica:</label>
+                    <input type="checkbox" name="materias" value="Fisica">
+                    <label>Matematicas:</label>
+                    <input type="checkbox" name="materias" value="Matematicas">
+    
+    
+                    <br /><br />
+                    <input class="btn btn-primary" type="submit" id="cancelar" value="Cancelar" />
+                    <input class="btn btn-primary" type="submit" id="guardar" value="Guardar" />
+                    
+                </form>    
+
+
+            </div>
+
+            
+            <div class="formulario3 col-12 col-md-3">
+
+            </div>
+
+        </div>
+
+    </main>
+    <h3></h3>
+    <br /><br />
+
+    
+
+    <table class="table" align="center" >
+        <!--fila con titulos (negrilla)-->
+        <tr>
+            <th></th>
+            <th>LUNES</th>
+            <th>MARTES</th>
+            <th>MIERCOLES</th>
+            <th>JUEVES</th>
+            <th>VIERNES</th>
+        <tr>
+        <tr>
+            <!--fila sin negrilla -->
+            <td>6-8 pm</td>
+            <td>QUIMICA</td>
+            <td>MATEMATICAS</td>
+            <td>QUIMICA</td>
+            <td>IDIOMAS</td>
+            <td>FISICA</td>
+
+
+        </tr>
+</table>
+
+<h1 style="text-align:center">Ejercicios java script</h1>
+
+<script src="js/javascript1.js"></script>
+
+</body>
+</html>
